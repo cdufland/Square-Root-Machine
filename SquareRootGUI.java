@@ -137,7 +137,7 @@ public class SquareRootGUI extends javax.swing.JFrame {
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setResizable(false);
 
-        NumberJLabel.setText("Enter a Number");
+        NumberJLabel.setText("Enter a number");
 
         AccuracyJLabel.setText("Number of decimal places");
 
