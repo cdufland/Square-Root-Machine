@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<Form version="1.3" maxVersion="1.9" type="org.netbeans.modules.form.forminfo.JDialogFormInfo">
+  <Properties>
+    <Property name="defaultCloseOperation" type="int" value="2"/>
+    <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+      <Color blue="ff" green="ff" red="0" type="rgb"/>
+    </Property>
+    <Property name="type" type="java.awt.Window$Type" editor="org.netbeans.modules.form.editors.EnumEditor">
+      <Value id="UTILITY"/>
+    </Property>
+  </Properties>
+  <SyntheticProperties>
+    <SyntheticProperty name="formSizePolicy" type="int" value="1"/>
+    <SyntheticProperty name="generateCenter" type="boolean" value="false"/>
+  </SyntheticProperties>
+  <AuxValues>
+    <AuxValue name="FormSettings_autoResourcing" type="java.lang.Integer" value="0"/>
+    <AuxValue name="FormSettings_autoSetComponentName" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_generateFQN" type="java.lang.Boolean" value="true"/>
+    <AuxValue name="FormSettings_generateMnemonicsCode" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_i18nAutoMode" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_layoutCodeTarget" type="java.lang.Integer" value="1"/>
+    <AuxValue name="FormSettings_listenerGenerationStyle" type="java.lang.Integer" value="0"/>
+    <AuxValue name="FormSettings_variablesLocal" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_variablesModifier" type="java.lang.Integer" value="2"/>
+  </AuxValues>
+
+  <Layout>
+    <DimensionLayout dim="0">
+      <Group type="103" groupAlignment="0" attributes="0">
+          <Group type="102" alignment="0" attributes="0">
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Group type="102" attributes="0">
+                      <EmptySpace min="-2" pref="36" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Component id="WarningJLabel" max="32767" attributes="0"/>
+                          <Group type="102" attributes="0">
+                              <Component id="CopyRightJLabel" min="-2" pref="147" max="-2" attributes="0"/>
+                              <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
+                          </Group>
+                      </Group>
+                      <EmptySpace min="-2" pref="155" max="-2" attributes="0"/>
+                      <Component id="CloseJButton" min="-2" max="-2" attributes="0"/>
+                  </Group>
+                  <Group type="102" alignment="1" attributes="0">
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Component id="ImageJLabel" pref="0" max="32767" attributes="0"/>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Component id="TitleJLabel" min="-2" pref="245" max="-2" attributes="0"/>
+                  </Group>
+              </Group>
+              <EmptySpace max="-2" attributes="0"/>
+          </Group>
+          <Group type="102" alignment="0" attributes="0">
+              <EmptySpace max="-2" attributes="0"/>
+              <Component id="jScrollPane1" min="-2" pref="418" max="-2" attributes="0"/>
+              <EmptySpace max="32767" attributes="0"/>
+          </Group>
+      </Group>
+    </DimensionLayout>
+    <DimensionLayout dim="1">
+      <Group type="103" groupAlignment="0" attributes="0">
+          <Group type="102" alignment="0" attributes="0">
+              <EmptySpace max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                  <Component id="ImageJLabel" min="-2" pref="120" max="-2" attributes="0"/>
+                  <Component id="TitleJLabel" max="32767" attributes="0"/>
+              </Group>
+              <EmptySpace min="-2" max="-2" attributes="0"/>
+              <Component id="jScrollPane1" min="-2" pref="264" max="-2" attributes="0"/>
+              <EmptySpace max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Group type="102" attributes="0">
+                      <Component id="WarningJLabel" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Component id="CopyRightJLabel" min="-2" max="-2" attributes="0"/>
+                  </Group>
+                  <Component id="CloseJButton" min="-2" pref="34" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace max="32767" attributes="0"/>
+          </Group>
+      </Group>
+    </DimensionLayout>
+  </Layout>
+  <SubComponents>
+    <Component class="javax.swing.JLabel" name="ImageJLabel">
+      <Properties>
+        <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+          <Image iconType="3" name="/SquareRoot/square-root.jpg"/>
+        </Property>
+      </Properties>
+    </Component>
+    <Container class="javax.swing.JScrollPane" name="jScrollPane1">
+      <AuxValues>
+        <AuxValue name="autoScrollPane" type="java.lang.Boolean" value="true"/>
+      </AuxValues>
+
+      <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
+      <SubComponents>
+        <Component class="javax.swing.JTextArea" name="AboutJTextArea">
+          <Properties>
+            <Property name="editable" type="boolean" value="false"/>
+            <Property name="columns" type="int" value="20"/>
+            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+              <Font name="Monospaced" size="12" style="0"/>
+            </Property>
+            <Property name="lineWrap" type="boolean" value="true"/>
+            <Property name="rows" type="int" value="5"/>
+            <Property name="text" type="java.lang.String" value="This program allows the user to calculate the square root of a method based on two different methods. It also generates the square root based on the Math.sqrt method in Java to compare the two answers. &#xa;&#xa;To use the program the user enters a number (that is greater than zero but less than One billion) for which they want to find the square root. They can then enter how accurate they would like that result to be using the given method. They can go from 0 to 15 decimal places. &#xa;&#xa;The user selects a method and then presses the calculate button. At that point the program first calculates a seed value. This value represents a first guess to start calculations. &#xa;&#xa;&#xa;The seed value is calculated by first&#xa;taking the log base ten of the user provided number. That number is then divided by two and stored as an integer (a whole number) it is then multiplied by two to get an even number exponent. At that point the number is then divided by 10 raised to the even number exponent. This gets the base value which is compared to 10 if its greater or equal the seed value will be of the form 6*10^n power where n is the even number exponent previously calculated divided by 2. If that number is less than 10 then the seed value will take the form 2*10^n where n is the is the even number exponent previously calculated divided by 2.&#xa;&#xa;Once the seed value is calculated the program then calculates the square root based on the method specified by the user. &#xa;&#xa;For the Newton Method the following formula is used&#xa;&#xa;x1 = ( x0 + ( numbe r/ x0 ) ) / 2&#xa;&#xa;where&#xa;x1= the next guess to be compared to the actual square root&#xa;x0= the previous guess &#xa;number = the user inputted number&#xa;&#xa;this process is repeated with x1 becoming x0 and a new guess being calculated in later iterations, until x1 is suitably close to the actual square root.&#xa;&#xa;For the Bakhshali method  the following formulas are used&#xa;&#xa;aN = ( number- x0^2)/ ( 2 * x0)&#xa;bN = x0 + aN&#xa;x1 = bN - ( aN^2 / ( 2x0 + aN))&#xa;&#xa;where aN= represents a first guess&#xa;bN = the original guess plus this first guess&#xa;x1 represents the final guess to be compared to the actual square root. &#xa;This method essentially has two guesses built into one iteration.&#xa;This process repeats until it is suitably close to the actual square root, it repeats at least five times.&#xa;&#xa;The program then uses the estimated value to calcule an error which is as follows&#xa;|actual-estimate|/actual * 100&#xa;&#xa;actual = the actual square root of the number&#xa;estimate = the square root calculated based on the chosen method&#xa;it then outputs as a percentage. &#xa;The number of iterations that needed to be conducted to get suitably close to the actual square root appear below the error.&#xa;&#xa;https://en.wikipedia.org/wiki/Methods_of_computing_square_roots&#xa;This program is for educational purposes only. &#xa;&#xa;"/>
+            <Property name="wrapStyleWord" type="boolean" value="true"/>
+          </Properties>
+        </Component>
+      </SubComponents>
+    </Container>
+    <Component class="javax.swing.JButton" name="CloseJButton">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Close"/>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="CloseJButtonActionPerformed"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JLabel" name="CopyRightJLabel">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="(c) Cameron Ufland 2018"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="WarningJLabel">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Educational Purposes Only "/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="TitleJLabel">
+      <Properties>
+        <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="ff" green="ff" red="0" type="rgb"/>
+        </Property>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Tahoma" size="18" style="1"/>
+        </Property>
+        <Property name="horizontalAlignment" type="int" value="0"/>
+        <Property name="text" type="java.lang.String" value="The Square Root Machine"/>
+      </Properties>
+    </Component>
+  </SubComponents>
+</Form>
